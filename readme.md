@@ -49,6 +49,26 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
    Aqui você pode testar todos os endpoints da API de forma interativa.
 
+7. **Construção do yaml da pipeline CI/CD no GitHub Actions:**
+```name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+```
 ---
 
 ## Estrutura do Projeto
