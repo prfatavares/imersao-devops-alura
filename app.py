@@ -13,6 +13,8 @@ app = FastAPI(
         Esta API fornece endpoints para gerenciar alunos, cursos e turmas, em uma instituição de ensino.  
         
         Permite realizar diferentes operações em cada uma dessas entidades.
+
+        Versão construída na Imersão DevOps Alura - 2025
     """, 
     version="1.0.0",
 )
