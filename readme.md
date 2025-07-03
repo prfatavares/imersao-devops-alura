@@ -15,7 +15,7 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 2. **Crie um ambiente virtual:**
    ```sh
-   python3 -m venv ./venv
+   python3.11 -m venv ./venv
    ```
 
 3. **Ative o ambiente virtual:**
@@ -64,5 +64,10 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 - O banco de dados SQLite será criado automaticamente como `escola.db` na primeira execução.
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
+
+---
+
+- Senha da aula 1: MARVEL
+- Senha da aula 2: Ellis
 
 ---
