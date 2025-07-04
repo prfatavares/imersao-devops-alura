@@ -69,6 +69,14 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 ```
+
+8. **Executando no Google Cloud Platform - GCP:**
+```sh
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud run deploy --port=8000
+```
+
 ---
 
 ## Estrutura do Projeto
@@ -89,5 +97,6 @@ jobs:
 
 - Senha da aula 1: MARVEL
 - Senha da aula 2: Ellis
+- Senha da aula 3: YAML
 
 ---
